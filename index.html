@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Signup Form |Odin Project</title>
+    <title>Signup Form | Odin Project</title>
 </head>
 
 <body>
@@ -25,30 +25,50 @@
             <p class="second-paragraph">You know you want to.</p>
 
             <form action="" method="post">
-                <div class="form-leftside">
-                    <label for="firstName">FIRSTNAME</label>
-                    <input type="text" name="first-name" id="firstName">
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email-address" id="email">
-                    <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password">
+                <div class="first-row">
+                    <div class="input1">
+                        <label for="firstName">FIRSTNAME</label>
+                        <input type="text" name="first-name" id="firstName">
+                    </div>
+                    <div class="input2"><label for="lastName">LASTNAME</label>
+                        <input type="text" name="last-name" id="lastName">
+                    </div>
 
                 </div>
-                <div class="form-rightside">
-                    <label for="lastName">LASTNAME</label>
-                    <input type="text" name="last-name" id="lastName">
-                    <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" name="phone-number" id="phone">
-                    <label for="passwordConfirm">PASSWORD</label>
+                <div class="second-row">
+                    <div class="input3">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email-address" id="email">
+                    </div>
+                    <div class="input4">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="phone-number" id="phone">
+                    </div>
+
+
+                </div>
+                <div class="third-row">
+                    <div class="input5">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password">
+                        
+                    </div>
+
+                    <div class="input6">
+                        <label for="passwordConfirm">CONFIRM PASSWORD</label>
                     <input type="password" name="password" id="passwordConfirm">
+                    <p id="passwordMatch"></p>
+                    </div>
+
+                    
                 </div>
             </form>
-            <button type="submit" class="submit">Create Account</button>
-            
-    <P class="last-paragraph">Already have an account?<span>Log in</span></P>
+            <button type="submit" class="submit" onclick="checkPasswordMatch()">Create Account</button>
+
+            <P class="last-paragraph">Already have an account?<span>Log in</span></P>
         </div>
     </div>
-
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

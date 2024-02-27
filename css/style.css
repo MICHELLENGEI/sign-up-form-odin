@@ -2,11 +2,13 @@ body {
     margin: 0;
     padding: 0;
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: row;
-    
+
 }
+
 .left-content {
     background-image: url('../img/halie-west-25xggax4bSA-unsplash.jpg');
     background-repeat: no-repeat;
@@ -14,7 +16,7 @@ body {
     background-size: cover;
     width: 40vw;
     height: 100vh;
-    
+
 }
 
 .logo {
@@ -24,7 +26,7 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top :100px;
+    top: 100px;
     width: 40vw;
 }
 
@@ -32,61 +34,148 @@ body {
     color: white;
     font-size: 3rem;
 }
-.right-content{
-    display: flex;
-    flex-direction: column;
-    
-}
-.top-paragraph{
-margin-top: 50px;
-margin-left:40px;
-margin-bottom: 20px;
-font-size: 1.5rem;
-}
-.second-paragraph{
-    font-size: 1.5rem;
-    margin-left:40px; 
-}
-form{
-    width: 60vw;
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-    box-shadow: 2px 4px 4px 4px#0000002f;
-    
-}
-.form-leftside,
-.form-rightside{
-    padding: 20px 40px;
+
+.right-content {
     display: flex;
     flex-direction: column;
 
 }
-label{
+
+.top-paragraph {
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.second-paragraph {
+    font-size: 1.5rem;
+    margin-left: 40px;
+}
+
+form {
+    width: 60vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 4px 4px 4px#0000002f;
+
+}
+
+.first-row,
+.second-row,
+.third-row {
+    padding: 5px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.input1,
+.input2,
+.input3,
+.input4,
+.input5,
+.input6{
+    display: flex;
+    flex-direction: column;
+}
+
+label {
     font-size: 0.6rem;
     margin-bottom: 5px;
 }
-input{
-    margin-bottom: 10px ;
+
+input {
+    margin-bottom: 5px;
     width: 200px;
-    height: 40px;
-    
+    height: 20px;
 }
-input:focus{
+
+input:focus {
     border: 1px solid rgba(255, 0, 0, 0);
 }
-.submit{
+
+.submit {
     width: 150px;
     height: 40px;
-    background-color:#E5E7EB;
+    background-color: #596D48;
     color: white;
     border: none;
     margin: 20px 40px;
     border-radius: 4px;
 }
-.last-paragraph{
-margin-left: 40px;
+
+.last-paragraph {
+    margin-left: 40px;
 }
-span{
-    color:#E5E7EB;
+
+span {
+    color: #596D48;
+}
+
+#passwordMatch {
+    font-size: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.password-error {
+    border: 2px solid red;
+}
+
+.password-success {
+    border: 2px solid green;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .top-paragraph {
+        margin-top: 50px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
+    
+    .second-paragraph {
+        font-size: 1rem;
+        margin-left: 40px;
+    }
+    .first-row,
+    .second-row,
+    .third-row {
+        padding: 5px 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 40px;
+    
+    }
+    .left-content {
+        width: 100vw;
+        height: 40vh;
+    
+    }
+
+    .logo {
+        top: 70px;
+        width: 100vw;
+    }
+
+
+    form {
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 2px 4px 4px 4px#0000002f;
+    }
+    input {
+        width: 300px;
+        height: 20px;
+    }
+
 }
